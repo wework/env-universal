@@ -30,7 +30,7 @@ Env          | Condition  |   Notes  |
 `preprod`    | `APP_ENV` is 'preprod' | `NODE_ENV` should be 'production' for deployments |
 `test`       | `NODE_ENV` is 'test' or 'testCI' | |
 
-*Note that `NODE_ENV=production` only indicates that the app is deployed (vs running locally in development) and that `APP_ENV` specifies the environment.**
+*Note that `NODE_ENV=production` only indicates that the app is deployed (vs running locally in development) and that `APP_ENV` specifies the environment.*
 
 Runtime      | Condition  |
 ------------ | -----------|
@@ -58,7 +58,8 @@ const env = getEnv();
 console.log(env.version);
 console.log(env.is.client);
 console.log(env.is.server);
-console.log(env.is.prod);
+console.log(env.is.deployed);
+console.log(env.is.production);
 console.log(env.is.dev);
 ```
 
