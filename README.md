@@ -103,8 +103,8 @@ Target | Behavior
 [travis-url]:https://travis-ci.org/wework/env-universal
 [travis-image]: https://travis-ci.org/wework/env-universal.svg?branch=master
 
-[saucelabs-image]:https://saucelabs.com/browser-matrix/env-universal.svg
-[saucelabs-url]:https://saucelabs.com/u/env-universal
+[saucelabs-image]:https://saucelabs.com/browser-matrix/wework-env-universal.svg
+[saucelabs-url]:https://saucelabs.com/u/wework-env-universal
 
 [license-url]: LICENSE
 [license-image]: http://img.shields.io/badge/license-MIT-000000.svg?style=flat-square
