@@ -1,0 +1,20 @@
+{
+  "reporter": [
+    "html",
+    "lcov",
+    "cobertura",
+    "text"
+  ],
+  "include": [
+    "dist/index.js",
+    "src/**/*.js"
+  ],
+  "exclude": [
+    "src/index.js"
+  ],
+  "require": [
+    "babel-register"
+  ],
+  "all": true,
+  "show-process-tree": true
+}

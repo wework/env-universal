@@ -1,0 +1,7 @@
+# Don't publish anything to npm but package.json, the src
+# and dist directories, docs, and package.json
+
+!src/*
+!dist/*
+!*.md
+!package.json
