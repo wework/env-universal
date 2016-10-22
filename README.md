@@ -85,7 +85,7 @@ Target | Behavior
 **`npm test`** | Runs tests in browser and node runtimes
 **`npm run tdd`** | Runs tests, bundles and re-runs on file changes
 **`npm run test:coverage`** | Runs tests and outputs a code coverage report to `/coverage`
-**`npm run test:ci`** | Runs tests, outputs code coverage and JUnit reports
+**`npm run test:ci`** | Runs tests, outputs code coverage
 **`npm run lint`** | (*Run as a git pre-commit hook*) Runs `eslint`
 **`npm run docs`** | Generates `API.md` from JSDoc comments in `/src`
 **`npm run security-scan`** | (*Run as a git pre-push hook*) Checks npm dependencies for security vulnerabilities
