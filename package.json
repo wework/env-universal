@@ -39,7 +39,7 @@
     "lint": "eslint --format ./node_modules/eslint-friendly-formatter --cache src test",
     "security-scan": "nsp check --output summary --warn-only",
     "preversion": "npm run docs && git add API.md",
-    "version": "auto-changelog --package; git add CHANGELOG.md",
+    "version": "auto-changelog --template compact --package; git add CHANGELOG.md",
     "release": "np"
   },
   "repository": {
