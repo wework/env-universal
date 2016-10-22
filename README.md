@@ -17,6 +17,28 @@ This package provides utilities for working with environment configuration consi
 
 We created this at [WeWork](https://www.wework.com) to provide our applications a more consistent runtime. We use it with tools like `dotenv` and `webpack` in universal JavaScript applications.
 
+
+# Environment configuration
+
+We use a matrix of variables to define the environment of our applications:
+
+Env          | Condition  |   Notes  |
+------------ | -----------|----------|
+`development`| `NODE_ENV` is undefined or 'development' | Should only be true in local development environments |
+`production` | `APP_ENV` is 'production' | `NODE_ENV` should be 'production' for deployments |
+`staging`    | `APP_ENV` is 'staging' | `NODE_ENV` should be 'production' for deployments |
+`preprod`    | `APP_ENV` is 'preprod' | `NODE_ENV` should be 'production' for deployments |
+`test`       | `NODE_ENV` is 'test' or 'testCI' | |
+
+*Note that `NODE_ENV=production` only indicates that the app is deployed (vs running locally in development) and that `APP_ENV` specifies the environment.**
+
+Runtime      | Condition  |
+------------ | -----------|
+`server`     | `SERVER` has any value |
+`client`     | `CLIENT` has any value |
+
+By default, config is read from environment variables (`process.env`), but you can also pass in your own configuration object.
+
 # Usage
 
 See the [documentation](./API.md). Note that most util functions expect to receive `process.env` when not calling the root `env` function.
