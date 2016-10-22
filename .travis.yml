@@ -7,13 +7,14 @@ branches:
     - master
 
 before_script:
-    - "npm run bundle"
+    - npm run bundle
 
 script:
-    - "npm run test:ci"
+    - npm run test:ci
 
 after_success:
     - SAUCELABS=true npm run test:browser
+    - npm run test:coverage:coveralls-report
 
 cache:
   directories:
