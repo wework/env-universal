@@ -2,7 +2,7 @@
 
 # env-universal
 
-[src/index.js:10-10](https://github.com/wework/env-universal/blob/eb0ddd52a9c96c443786bce2b2d218c529fdefb4/src/index.js#L10-L10 "Source code on GitHub")
+[src/index.js:10-10](https://github.com/wework/env-universal/blob/f3b52976d54e7604b1f9fd7ff31b2f0746ffd781/src/index.js#L10-L10 "Source code on GitHub")
 
 Environment definitions and helpers
 
@@ -11,7 +11,7 @@ via something like Webpack's DefinePlugin
 
 # readEnv
 
-[src/index.js:29-79](https://github.com/wework/env-universal/blob/eb0ddd52a9c96c443786bce2b2d218c529fdefb4/src/index.js#L29-L79 "Source code on GitHub")
+[src/index.js:29-79](https://github.com/wework/env-universal/blob/f3b52976d54e7604b1f9fd7ff31b2f0746ffd781/src/index.js#L29-L79 "Source code on GitHub")
 
 Given an environment config (defaults to `process.env`),
 parse it into a standard environment definition
@@ -32,7 +32,7 @@ Returns **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refer
 
 # envDef
 
-[src/index.js:56-76](https://github.com/wework/env-universal/blob/eb0ddd52a9c96c443786bce2b2d218c529fdefb4/src/index.js#L56-L76 "Source code on GitHub")
+[src/index.js:56-76](https://github.com/wework/env-universal/blob/f3b52976d54e7604b1f9fd7ff31b2f0746ffd781/src/index.js#L56-L76 "Source code on GitHub")
 
 A standardized environment description
 
@@ -61,51 +61,51 @@ A standardized environment description
 
 # env-universal/constants
 
-[src/constants.js:7-7](https://github.com/wework/env-universal/blob/eb0ddd52a9c96c443786bce2b2d218c529fdefb4/src/constants.js#L7-L7 "Source code on GitHub")
+[src/constants.js:7-7](https://github.com/wework/env-universal/blob/f3b52976d54e7604b1f9fd7ff31b2f0746ffd781/src/constants.js#L7-L7 "Source code on GitHub")
 
 # production
 
-[src/constants.js:7-7](https://github.com/wework/env-universal/blob/eb0ddd52a9c96c443786bce2b2d218c529fdefb4/src/constants.js#L7-L7 "Source code on GitHub")
+[src/constants.js:7-7](https://github.com/wework/env-universal/blob/f3b52976d54e7604b1f9fd7ff31b2f0746ffd781/src/constants.js#L7-L7 "Source code on GitHub")
 
 Production NODE_ENV and/or APP_ENV
 
 # test
 
-[src/constants.js:13-13](https://github.com/wework/env-universal/blob/eb0ddd52a9c96c443786bce2b2d218c529fdefb4/src/constants.js#L13-L13 "Source code on GitHub")
+[src/constants.js:13-13](https://github.com/wework/env-universal/blob/f3b52976d54e7604b1f9fd7ff31b2f0746ffd781/src/constants.js#L13-L13 "Source code on GitHub")
 
 Test NODE_ENV
 
 # ci
 
-[src/constants.js:19-19](https://github.com/wework/env-universal/blob/eb0ddd52a9c96c443786bce2b2d218c529fdefb4/src/constants.js#L19-L19 "Source code on GitHub")
+[src/constants.js:19-19](https://github.com/wework/env-universal/blob/f3b52976d54e7604b1f9fd7ff31b2f0746ffd781/src/constants.js#L19-L19 "Source code on GitHub")
 
 CI NODE_ENV
 
 # development
 
-[src/constants.js:25-25](https://github.com/wework/env-universal/blob/eb0ddd52a9c96c443786bce2b2d218c529fdefb4/src/constants.js#L25-L25 "Source code on GitHub")
+[src/constants.js:25-25](https://github.com/wework/env-universal/blob/f3b52976d54e7604b1f9fd7ff31b2f0746ffd781/src/constants.js#L25-L25 "Source code on GitHub")
 
 Development NODE_ENV
 
 # staging
 
-[src/constants.js:31-31](https://github.com/wework/env-universal/blob/eb0ddd52a9c96c443786bce2b2d218c529fdefb4/src/constants.js#L31-L31 "Source code on GitHub")
+[src/constants.js:31-31](https://github.com/wework/env-universal/blob/f3b52976d54e7604b1f9fd7ff31b2f0746ffd781/src/constants.js#L31-L31 "Source code on GitHub")
 
 Staging APP_ENV
 
 # preprod
 
-[src/constants.js:37-37](https://github.com/wework/env-universal/blob/eb0ddd52a9c96c443786bce2b2d218c529fdefb4/src/constants.js#L37-L37 "Source code on GitHub")
+[src/constants.js:37-37](https://github.com/wework/env-universal/blob/f3b52976d54e7604b1f9fd7ff31b2f0746ffd781/src/constants.js#L37-L37 "Source code on GitHub")
 
 Preprod APP_ENV
 
 # env-universal/utils
 
-[src/utils.js:3-3](https://github.com/wework/env-universal/blob/eb0ddd52a9c96c443786bce2b2d218c529fdefb4/src/utils.js#L3-L3 "Source code on GitHub")
+[src/utils.js:3-3](https://github.com/wework/env-universal/blob/f3b52976d54e7604b1f9fd7ff31b2f0746ffd781/src/utils.js#L3-L3 "Source code on GitHub")
 
 # getAppVersion
 
-[src/utils.js:21-21](https://github.com/wework/env-universal/blob/eb0ddd52a9c96c443786bce2b2d218c529fdefb4/src/utils.js#L21-L21 "Source code on GitHub")
+[src/utils.js:21-21](https://github.com/wework/env-universal/blob/f3b52976d54e7604b1f9fd7ff31b2f0746ffd781/src/utils.js#L21-L21 "Source code on GitHub")
 
 Get the app version from package.json
 
@@ -118,7 +118,7 @@ Returns **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refer
 
 # getEnv
 
-[src/utils.js:29-29](https://github.com/wework/env-universal/blob/eb0ddd52a9c96c443786bce2b2d218c529fdefb4/src/utils.js#L29-L29 "Source code on GitHub")
+[src/utils.js:29-29](https://github.com/wework/env-universal/blob/f3b52976d54e7604b1f9fd7ff31b2f0746ffd781/src/utils.js#L29-L29 "Source code on GitHub")
 
 Get the application environment, defaults to development
 
@@ -131,7 +131,7 @@ Returns **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refer
 
 # isDev
 
-[src/utils.js:37-37](https://github.com/wework/env-universal/blob/eb0ddd52a9c96c443786bce2b2d218c529fdefb4/src/utils.js#L37-L37 "Source code on GitHub")
+[src/utils.js:37-37](https://github.com/wework/env-universal/blob/f3b52976d54e7604b1f9fd7ff31b2f0746ffd781/src/utils.js#L37-L37 "Source code on GitHub")
 
 Is the application in development mode?
 
@@ -144,7 +144,7 @@ Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refe
 
 # isProd
 
-[src/utils.js:45-45](https://github.com/wework/env-universal/blob/eb0ddd52a9c96c443786bce2b2d218c529fdefb4/src/utils.js#L45-L45 "Source code on GitHub")
+[src/utils.js:45-45](https://github.com/wework/env-universal/blob/f3b52976d54e7604b1f9fd7ff31b2f0746ffd781/src/utils.js#L45-L45 "Source code on GitHub")
 
 Is the application in production (deployed) mode?
 
@@ -157,7 +157,7 @@ Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refe
 
 # isCI
 
-[src/utils.js:53-53](https://github.com/wework/env-universal/blob/eb0ddd52a9c96c443786bce2b2d218c529fdefb4/src/utils.js#L53-L53 "Source code on GitHub")
+[src/utils.js:53-53](https://github.com/wework/env-universal/blob/f3b52976d54e7604b1f9fd7ff31b2f0746ffd781/src/utils.js#L53-L53 "Source code on GitHub")
 
 Is the application in CI mode?
 
@@ -170,7 +170,7 @@ Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refe
 
 # isTest
 
-[src/utils.js:61-61](https://github.com/wework/env-universal/blob/eb0ddd52a9c96c443786bce2b2d218c529fdefb4/src/utils.js#L61-L61 "Source code on GitHub")
+[src/utils.js:61-61](https://github.com/wework/env-universal/blob/f3b52976d54e7604b1f9fd7ff31b2f0746ffd781/src/utils.js#L61-L61 "Source code on GitHub")
 
 Is the application in test mode?
 
@@ -183,7 +183,7 @@ Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refe
 
 # isStaging
 
-[src/utils.js:69-69](https://github.com/wework/env-universal/blob/eb0ddd52a9c96c443786bce2b2d218c529fdefb4/src/utils.js#L69-L69 "Source code on GitHub")
+[src/utils.js:69-69](https://github.com/wework/env-universal/blob/f3b52976d54e7604b1f9fd7ff31b2f0746ffd781/src/utils.js#L69-L69 "Source code on GitHub")
 
 Is the application a staging deployment?
 
@@ -196,7 +196,7 @@ Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refe
 
 # isPreProd
 
-[src/utils.js:77-77](https://github.com/wework/env-universal/blob/eb0ddd52a9c96c443786bce2b2d218c529fdefb4/src/utils.js#L77-L77 "Source code on GitHub")
+[src/utils.js:77-77](https://github.com/wework/env-universal/blob/f3b52976d54e7604b1f9fd7ff31b2f0746ffd781/src/utils.js#L77-L77 "Source code on GitHub")
 
 Is the application a preprod deployment?
 
@@ -209,7 +209,7 @@ Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refe
 
 # isHerokuReviewApp
 
-[src/utils.js:85-85](https://github.com/wework/env-universal/blob/eb0ddd52a9c96c443786bce2b2d218c529fdefb4/src/utils.js#L85-L85 "Source code on GitHub")
+[src/utils.js:85-85](https://github.com/wework/env-universal/blob/f3b52976d54e7604b1f9fd7ff31b2f0746ffd781/src/utils.js#L85-L85 "Source code on GitHub")
 
 Is the application a heroku review app deployment?
 
@@ -222,7 +222,7 @@ Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refe
 
 # isServer
 
-[src/utils.js:93-93](https://github.com/wework/env-universal/blob/eb0ddd52a9c96c443786bce2b2d218c529fdefb4/src/utils.js#L93-L93 "Source code on GitHub")
+[src/utils.js:93-93](https://github.com/wework/env-universal/blob/f3b52976d54e7604b1f9fd7ff31b2f0746ffd781/src/utils.js#L93-L93 "Source code on GitHub")
 
 Is the application running in a server runtime?
 
@@ -235,7 +235,7 @@ Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refe
 
 # isClient
 
-[src/utils.js:101-101](https://github.com/wework/env-universal/blob/eb0ddd52a9c96c443786bce2b2d218c529fdefb4/src/utils.js#L101-L101 "Source code on GitHub")
+[src/utils.js:101-101](https://github.com/wework/env-universal/blob/f3b52976d54e7604b1f9fd7ff31b2f0746ffd781/src/utils.js#L101-L101 "Source code on GitHub")
 
 Is the application running in a client runtime?
 
@@ -248,7 +248,7 @@ Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refe
 
 # getPublicEnv
 
-[src/utils.js:121-124](https://github.com/wework/env-universal/blob/eb0ddd52a9c96c443786bce2b2d218c529fdefb4/src/utils.js#L121-L124 "Source code on GitHub")
+[src/utils.js:121-124](https://github.com/wework/env-universal/blob/f3b52976d54e7604b1f9fd7ff31b2f0746ffd781/src/utils.js#L121-L124 "Source code on GitHub")
 
 When building universal apps, it is common for a Node
 process to have sensitive information stored as
@@ -275,7 +275,7 @@ Returns **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refer
 
 # getHerokuMetadata
 
-[src/utils.js:144-152](https://github.com/wework/env-universal/blob/eb0ddd52a9c96c443786bce2b2d218c529fdefb4/src/utils.js#L144-L152 "Source code on GitHub")
+[src/utils.js:144-152](https://github.com/wework/env-universal/blob/f3b52976d54e7604b1f9fd7ff31b2f0746ffd781/src/utils.js#L144-L152 "Source code on GitHub")
 
 This is only useful for applications running on heroku
 with the [`runtime-dyno-metadata` labs feature enabled](https://devcenter.heroku.com/articles/dyno-metadata) and
@@ -298,11 +298,11 @@ Returns **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refer
 
 # env-universal/serverUtils
 
-[src/serverUtils.js:3-3](https://github.com/wework/env-universal/blob/eb0ddd52a9c96c443786bce2b2d218c529fdefb4/src/serverUtils.js#L3-L3 "Source code on GitHub")
+[src/serverUtils.js:3-3](https://github.com/wework/env-universal/blob/f3b52976d54e7604b1f9fd7ff31b2f0746ffd781/src/serverUtils.js#L3-L3 "Source code on GitHub")
 
 # serverHost
 
-[src/serverUtils.js:14-14](https://github.com/wework/env-universal/blob/eb0ddd52a9c96c443786bce2b2d218c529fdefb4/src/serverUtils.js#L14-L14 "Source code on GitHub")
+[src/serverUtils.js:14-14](https://github.com/wework/env-universal/blob/f3b52976d54e7604b1f9fd7ff31b2f0746ffd781/src/serverUtils.js#L14-L14 "Source code on GitHub")
 
 Get the server host. Defaults to '0.0.0.0'
 
@@ -315,7 +315,7 @@ Returns **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refer
 
 # serverPort
 
-[src/serverUtils.js:23-23](https://github.com/wework/env-universal/blob/eb0ddd52a9c96c443786bce2b2d218c529fdefb4/src/serverUtils.js#L23-L23 "Source code on GitHub")
+[src/serverUtils.js:23-23](https://github.com/wework/env-universal/blob/f3b52976d54e7604b1f9fd7ff31b2f0746ffd781/src/serverUtils.js#L23-L23 "Source code on GitHub")
 
 Get the server port. Defaults to '8080'
 
