@@ -1,5 +1,5 @@
 {
-  "name": "universal-env",
+  "name": "env-universal",
   "version": "0.0.0",
   "author": "WeWork Digital <dev-team@wework.com>",
   "contributors": [
@@ -43,12 +43,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/wework/universal-env.git"
+    "url": "git+ssh://git@github.com/wework/env-universal.git"
   },
   "bugs": {
-    "url": "https://github.com/wework/universal-env/issues"
+    "url": "https://github.com/wework/env-universal/issues"
   },
-  "homepage": "https://github.com/wework/universal-env#readme",
+  "homepage": "https://github.com/wework/env-universal#readme",
   "devDependencies": {
     "auto-changelog": "0.3.1",
     "babel-core": "6.17.0",

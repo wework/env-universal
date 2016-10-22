@@ -1,4 +1,4 @@
-/** @module universal-env/constants */
+/** @module env-universal/constants */
 
 /**
  * Production NODE_ENV and/or APP_ENV

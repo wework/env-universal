@@ -1,7 +1,7 @@
 // Leverage node's resolution to get the dist package
 import readEnv from '../..';
 
-describe('dist/universal-env', () => {
+describe('dist/env-universal', () => {
   describe('module', () => {
     it('default export is a function', () => {
       expect(readEnv).to.be.a('function');

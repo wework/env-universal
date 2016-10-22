@@ -1,4 +1,4 @@
-universal-env
+env-universal
 ================
 
 [![Build Status][travis-image]][travis-url]
@@ -30,7 +30,7 @@ This package is bundled as a CommonJS module in `dist` and can be required like 
 ## Examples
 
 ```js
-import getEnv from 'universal-env';
+import getEnv from 'env-universal';
 const env = getEnv();
 
 console.log(env.version);
@@ -71,18 +71,18 @@ Target | Behavior
 **`npm run` will list all npm scripts**
 
 
-[npm-url]: https://npmjs.org/package/universal-env
-[npm-version-image]: http://img.shields.io/npm/v/universal-env.svg?style=flat-square
-[npm-downloads-image]: http://img.shields.io/npm/dm/universal-env.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/env-universal
+[npm-version-image]: http://img.shields.io/npm/v/env-universal.svg?style=flat-square
+[npm-downloads-image]: http://img.shields.io/npm/dm/env-universal.svg?style=flat-square
 
-[coveralls-image]:https://coveralls.io/repos/github/wework/universal-env/badge.svg?branch=master
-[coveralls-url]:https://coveralls.io/github/wework/universal-env?branch=master
+[coveralls-image]:https://coveralls.io/repos/github/wework/env-universal/badge.svg?branch=master
+[coveralls-url]:https://coveralls.io/github/wework/env-universal?branch=master
 
-[travis-url]:https://travis-ci.org/wework/universal-env
-[travis-image]: https://travis-ci.org/wework/universal-env.svg?branch=master
+[travis-url]:https://travis-ci.org/wework/env-universal
+[travis-image]: https://travis-ci.org/wework/env-universal.svg?branch=master
 
-[saucelabs-image]:https://saucelabs.com/browser-matrix/universal-env.svg
-[saucelabs-url]:https://saucelabs.com/u/universal-env
+[saucelabs-image]:https://saucelabs.com/browser-matrix/env-universal.svg
+[saucelabs-url]:https://saucelabs.com/u/env-universal
 
 [license-url]: LICENSE
 [license-image]: http://img.shields.io/badge/license-MIT-000000.svg?style=flat-square

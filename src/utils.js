@@ -1,4 +1,4 @@
-/** @module universal-env/utils */
+/** @module env-universal/utils */
 
 import mapValues from 'lodash/mapValues';
 import pick from 'lodash/pick';

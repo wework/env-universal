@@ -4,7 +4,7 @@
  * Note: in browser runtimes `process.env` will need to be defined
  * via something like Webpack's DefinePlugin
  *
- * @module universal-env
+ * @module env-universal
  */
 
 import * as constants from './constants';
@@ -31,8 +31,8 @@ export default function readEnv(config = process.env) {
    * envDef
    *
    * @description A standardized environment description
-   * - see `universal-env/constants`
-   * - see `universal-env/utils`
+   * - see `env-universal/constants`
+   * - see `env-universal/utils`
    *
    * @property {String}  env - `process.env.NODE_ENV`
    * @property {String}  version - NPM package version

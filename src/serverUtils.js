@@ -1,4 +1,4 @@
-/** @module universal-env/serverUtils */
+/** @module env-universal/serverUtils */
 
 import { isProd } from './utils';
 
