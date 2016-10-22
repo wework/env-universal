@@ -34,7 +34,8 @@ export default function readEnv(config = process.env) {
    * - see `env-universal/constants`
    * - see `env-universal/utils`
    *
-   * @property {String}  env - `process.env.NODE_ENV`
+   * @property {String}  mode -  `process.env.NODE_ENV`
+   * @property {String}  stage - `process.env.APP_ENV`
    * @property {String}  version - NPM package version
    * @property {Object}  is - config flags based on env
    * @property {Boolean} is.deployed
@@ -55,7 +56,8 @@ export default function readEnv(config = process.env) {
    * @type {Object}
    */
   const envDef = {
-    env: utils.getEnv(config),
+    mode: utils.getEnv(config),
+    stage: utils.getStage(config),
     version: utils.getAppVersion(config),
     is: {
       deployed: utils.isDeployed(config),

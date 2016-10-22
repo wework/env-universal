@@ -8,17 +8,31 @@ describe('dist/env-universal', () => {
     });
   })
 
-  describe('env', () => {
-    it('exposes an env property', () => {
-      expect(readEnv()).to.have.property('env');
+  describe('mode', () => {
+    it('exposes a mode property', () => {
+      expect(readEnv()).to.have.property('mode');
     });
 
     it('defaults to "development"', () => {
-      expect(readEnv({}).env).to.eql('development');
+      expect(readEnv({}).mode).to.eql('development');
     });
 
     it('returns config.NODE_ENV', () => {
-      expect(readEnv({ NODE_ENV: 'ENV-FOR-TEST' }).env).to.eql('ENV-FOR-TEST');
+      expect(readEnv({ NODE_ENV: 'ENV-FOR-TEST' }).mode).to.eql('ENV-FOR-TEST');
+    });
+  });
+
+  describe('stage', () => {
+    it('exposes a stage property', () => {
+      expect(readEnv()).to.have.property('stage');
+    });
+
+    it('defaults to undefined', () => {
+      expect(readEnv({}).stage).to.not.be.ok;
+    });
+
+    it('returns config.APP_ENV', () => {
+      expect(readEnv({ APP_ENV: 'ENV-FOR-TEST' }).stage).to.eql('ENV-FOR-TEST');
     });
   });
 

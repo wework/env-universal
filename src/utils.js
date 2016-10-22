@@ -29,6 +29,14 @@ export const getAppVersion = (config = {}) => JSON.stringify(config.npm_package_
 export const getEnv = (config = {}) => config.NODE_ENV || development;
 
 /**
+ * Get the application deployment stage
+ * @param {Object} config
+ * @param {String} config.APP_ENV
+ * @return {String?}
+ */
+export const getStage = (config = {}) => config.APP_ENV;
+
+/**
  * Is the application in development mode?
  * @param  {Object} config
  * @param  {String} config.NODE_ENV
@@ -66,7 +74,7 @@ export const isTest = (config = {}) => getEnv(config) === test || isCI(config);
  * @param  {String} config.APP_ENV
  * @return {Boolean}
  */
-export const isStaging = (config = {}) => config.APP_ENV === staging;
+export const isStaging = (config = {}) => getStage(config) === staging;
 
 /**
  * Is the application a preprod deployment?
@@ -74,7 +82,7 @@ export const isStaging = (config = {}) => config.APP_ENV === staging;
  * @param  {String} config.APP_ENV
  * @return {Boolean}
  */
-export const isPreProd = (config = {}) => config.APP_ENV === preprod;
+export const isPreProd = (config = {}) => getStage(config) === preprod;
 
 /**
  * Is the application a production deployment?
@@ -82,7 +90,7 @@ export const isPreProd = (config = {}) => config.APP_ENV === preprod;
  * @param  {String} config.APP_ENV
  * @return {Boolean}
  */
-export const isProduction = (config = {}) => config.APP_ENV === production;
+export const isProduction = (config = {}) => getStage(config) === production;
 
 /**
  * Is the application a heroku review app deployment?
@@ -138,23 +146,17 @@ export const getPublicEnv = (publicKeys, config = process.env) => mapValues(
  * is not included in the default output of `env`
  *
  * @param  {Object} config
- * @param  {String} config.HEROKU_APP_ID - The unique identifier for the application.
- *                                        "9daa2797-e49b-4624-932f-ec3f9688e3da"
  * @param  {String} config.HEROKU_APP_NAME - The application name. "example-app"
- * @param  {String} config.HEROKU_DYNO_ID - The dyno identifier.  "1vac4117-c29f-4312-521e-ba4d8638c1ac"
- * @param  {String} config.HEROKU_RELEASE_CREATED_AT - The dyno identifier.  "1vac4117-c29f-4312-521e-ba4d8638c1ac"
+ * @param  {String} config.HEROKU_RELEASE_CREATED_AT - The time and date the release was created.
+ *                                                     "2015-04-02T18:00:42Z"
  * @param  {String} config.HEROKU_RELEASE_VERSION - The identifier for the current release. "v42"
  * @param  {String} config.HEROKU_SLUG_COMMIT - The commit hash for the current release.
  *                                              "2c3a0b24069af49b3de35b8e8c26765c1dba9ff0"
- * @param  {String} config.HEROKU_SLUG_DESCRIPTION - The description of the current release. "Deploy 2c3a0b2"
  * @return {Object}
  */
 export const getHerokuMetadata = (config = {}) => ({
-  appId: config.HEROKU_APP_ID,
-  appName: config.HEROKU_APP_NAME,
-  dynoId: config.HEROKU_DYNO_ID,
+  name: config.HEROKU_APP_NAME,
   at: config.HEROKU_RELEASE_CREATED_AT,
   version: config.HEROKU_RELEASE_VERSION,
   slug: config.HEROKU_SLUG_COMMIT,
-  description: config.HEROKU_SLUG_DESCRIPTION
 });

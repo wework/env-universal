@@ -17,6 +17,16 @@ describe('src/utils', () => {
     expect(utils.getEnv()).to.eql('development');
   });
 
+  it('#getStage returns config.APP_ENV', () => {
+    const v = {};
+    expect(utils.getStage({ APP_ENV: v })).to.eql(v);
+    expect(utils.getStage({ APP_ENV: 'boo' })).to.eql('boo');
+  });
+
+  it('#getStage defaults to undefined', () => {
+    expect(utils.getStage()).to.not.be.ok;
+  });
+
   it('#isTest returns true when isCI returns true', () => {
     // Would like to stub isCI here but cant because its in local scope to isTest
     expect(utils.isTest({ NODE_ENV: 'testCI' })).to.eql(true);
