@@ -37,12 +37,12 @@ export const getEnv = (config = {}) => config.NODE_ENV || development;
 export const isDev = (config = {}) => getEnv(config) === development;
 
 /**
- * Is the application in production (deployed) mode?
+ * Is the application deployed (NODE_ENV=production)
  * @param  {Object} config
  * @param  {String} config.NODE_ENV
  * @return {Boolean}
  */
-export const isProd = (config = {}) => getEnv(config) === production;
+export const isDeployed = (config = {}) => getEnv(config) === production;
 
 /**
  * Is the application in CI mode?
@@ -75,6 +75,14 @@ export const isStaging = (config = {}) => config.APP_ENV === staging;
  * @return {Boolean}
  */
 export const isPreProd = (config = {}) => config.APP_ENV === preprod;
+
+/**
+ * Is the application a production deployment?
+ * @param  {Object} config
+ * @param  {String} config.APP_ENV
+ * @return {Boolean}
+ */
+export const isProduction = (config = {}) => config.APP_ENV === production;
 
 /**
  * Is the application a heroku review app deployment?

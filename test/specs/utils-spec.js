@@ -27,11 +27,12 @@ describe('src/utils', () => {
   it.skip('#getHerokuMetadata', () => {});
 
   // probably wont do these
+  it.skip('#isDeployed', () => {});
   it.skip('#isDev', () => {});
-  it.skip('#isProd', () => {});
   it.skip('#isCI', () => {});
   it.skip('#isStaging', () => {});
   it.skip('#isPreProd', () => {});
+  it.skip('#isProduction', () => {});
   it.skip('#isHerokuReviewApp', () => {});
   it.skip('#isServer', () => {});
   it.skip('#isClient', () => {});

@@ -1,6 +1,6 @@
 /** @module env-universal/serverUtils */
 
-import { isProd } from './utils';
+import { isDeployed } from './utils';
 
 export const DEFAULT_HOST = '0.0.0.0';
 export const DEFAULT_PORT = '8080';
@@ -20,4 +20,4 @@ export const serverHost = (config = {}) => config.HOST || DEFAULT_HOST;
  * @param  {String} config.PORT
  * @return {String}
  */
-export const serverPort = (config = {}) => isProd(config) ? config.PORT : (config.PORT || DEFAULT_PORT);
+export const serverPort = (config = {}) => isDeployed(config) ? config.PORT : (config.PORT || DEFAULT_PORT);

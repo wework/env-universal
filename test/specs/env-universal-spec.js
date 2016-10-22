@@ -51,8 +51,12 @@ describe('dist/env-universal', () => {
       expect(readEnv({ NODE_ENV: 'production' }).is.dev).to.eql(false);
     });
 
-    it('is.prod=true when NODE_ENV=production', () => {
-      expect(readEnv({ NODE_ENV: 'production' }).is.prod).to.eql(true);
+    it('is.deployed=false when NODE_ENV!=production', () => {
+      expect(readEnv({ NODE_ENV: 'foo' }).is.deployed).to.eql(false);
+    });
+
+    it('is.deployed=true when NODE_ENV=production', () => {
+      expect(readEnv({ NODE_ENV: 'production' }).is.deployed).to.eql(true);
     });
 
     it('is.test=false when NODE_ENV!=test or testCI', () => {
@@ -89,6 +93,14 @@ describe('dist/env-universal', () => {
 
     it('is.preprod=true when APP_ENV=preprod', () => {
       expect(readEnv({ APP_ENV: 'preprod' }).is.preprod).to.eql(true);
+    });
+
+    it('is.production=false when APP_ENV!=production', () => {
+      expect(readEnv({ APP_ENV: 'foo' }).is.production).to.eql(false);
+    });
+
+    it('is.production=true when APP_ENV=production', () => {
+      expect(readEnv({ APP_ENV: 'production' }).is.production).to.eql(true);
     });
 
     it('is.client=false when !CLIENT', () => {

@@ -18,12 +18,12 @@ describe('src/serverUtils', () => {
     });
 
     it('defaults to DEFAULT_PORT when not in production', () => {
-      sinon.stub(utils, 'isProd').returns(false);
+      sinon.stub(utils, 'isDeployed').returns(false);
       expect(serverUtils.serverPort()).to.eql(serverUtils.DEFAULT_PORT);
     });
 
     it('defaults to undefined in production', () => {
-      sinon.stub(utils, 'isProd').returns(true);
+      sinon.stub(utils, 'isDeployed').returns(true);
       expect(serverUtils.serverPort()).to.eql(undefined);
     });
   });

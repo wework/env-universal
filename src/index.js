@@ -37,12 +37,13 @@ export default function readEnv(config = process.env) {
    * @property {String}  env - `process.env.NODE_ENV`
    * @property {String}  version - NPM package version
    * @property {Object}  is - config flags based on env
+   * @property {Boolean} is.deployed
    * @property {Boolean} is.client
    * @property {Boolean} is.server
    * @property {Boolean} is.dev
    * @property {Boolean} is.staging
    * @property {Boolean} is.preprod
-   * @property {Boolean} is.prod
+   * @property {Boolean} is.production
    * @property {Boolean} is.test
    * @property {Boolean} is.ci
    * @property {Boolean} is.reviewApp
@@ -57,12 +58,13 @@ export default function readEnv(config = process.env) {
     env: utils.getEnv(config),
     version: utils.getAppVersion(config),
     is: {
+      deployed: utils.isDeployed(config),
       client: utils.isClient(config),
       server: utils.isServer(config),
       dev: utils.isDev(config),
       staging: utils.isStaging(config),
       preprod: utils.isPreProd(config),
-      prod: utils.isProd(config),
+      production: utils.isProduction(config),
       test: utils.isTest(config),
       ci: utils.isCI(config),
       reviewApp: utils.isHerokuReviewApp(config)
