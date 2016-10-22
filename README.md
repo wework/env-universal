@@ -2,6 +2,7 @@ env-universal
 ================
 
 [![Build Status][travis-image]][travis-url]
+[![Libraries.io for GitHub][librariesio-image]][librariesio-url]
 [![Coverage Status][coveralls-image]][coveralls-url]
 [![NPM version][npm-version-image]][npm-url]
 [![NPM downloads][npm-downloads-image]][npm-url]
@@ -109,3 +110,6 @@ Target | Behavior
 
 [license-url]: LICENSE
 [license-image]: http://img.shields.io/badge/license-MIT-000000.svg?style=flat-square
+
+[librariesio-url]: https://libraries.io/npm/env-universal
+[librariesio-image]: https://img.shields.io/librariesio/github/wework/env-universal.svg?maxAge=2592000
