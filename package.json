@@ -37,7 +37,7 @@
     "docs": "documentation build src/index.js --github --format md --output API.md",
     "lint": "eslint --format ./node_modules/eslint-friendly-formatter --cache src test",
     "security-scan": "nsp check --output summary --warn-only",
-    "preversion": "npm test && npm run docs && git add API.md",
+    "preversion": "npm run docs && git add API.md",
     "version": "auto-changelog --package; git add CHANGELOG.md",
     "release": "np"
   },
