@@ -2,7 +2,7 @@
 
 # env-universal
 
-[src/index.js:10-10](https://github.com/wework/env-universal/blob/f7eb9a58be7ed6db2083072f3e0c31318b25a93c/src/index.js#L10-L10 "Source code on GitHub")
+[src/index.js:10-10](https://github.com/wework/env-universal/blob/0a2b54793223f90818185b82f9e570c96f1876af/src/index.js#L10-L10 "Source code on GitHub")
 
 Environment definitions and helpers
 
@@ -11,14 +11,14 @@ via something like Webpack's DefinePlugin
 
 # readEnv
 
-[src/index.js:29-83](https://github.com/wework/env-universal/blob/f7eb9a58be7ed6db2083072f3e0c31318b25a93c/src/index.js#L29-L83 "Source code on GitHub")
+[src/index.js:29-83](https://github.com/wework/env-universal/blob/0a2b54793223f90818185b82f9e570c96f1876af/src/index.js#L29-L83 "Source code on GitHub")
 
 Given an environment config (defaults to `process.env`),
 parse it into a standard environment definition
 
 **Parameters**
 
--   `config` **\[[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)](default process.env)** 
+-   `config` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)?= process.env** 
     -   `config.NODE_ENV` **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)?** 
     -   `config.APP_ENV` **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)?** 
     -   `config.SERVER` **any?** 
@@ -32,7 +32,7 @@ Returns **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refer
 
 # envDef
 
-[src/index.js:58-80](https://github.com/wework/env-universal/blob/f7eb9a58be7ed6db2083072f3e0c31318b25a93c/src/index.js#L58-L80 "Source code on GitHub")
+[src/index.js:58-80](https://github.com/wework/env-universal/blob/0a2b54793223f90818185b82f9e570c96f1876af/src/index.js#L58-L80 "Source code on GitHub")
 
 A standardized environment description
 
@@ -63,220 +63,232 @@ A standardized environment description
 
 # env-universal/constants
 
-[src/constants.js:7-7](https://github.com/wework/env-universal/blob/f7eb9a58be7ed6db2083072f3e0c31318b25a93c/src/constants.js#L7-L7 "Source code on GitHub")
+[src/constants.js:7-7](https://github.com/wework/env-universal/blob/0a2b54793223f90818185b82f9e570c96f1876af/src/constants.js#L7-L7 "Source code on GitHub")
 
 # production
 
-[src/constants.js:7-7](https://github.com/wework/env-universal/blob/f7eb9a58be7ed6db2083072f3e0c31318b25a93c/src/constants.js#L7-L7 "Source code on GitHub")
+[src/constants.js:7-7](https://github.com/wework/env-universal/blob/0a2b54793223f90818185b82f9e570c96f1876af/src/constants.js#L7-L7 "Source code on GitHub")
 
 Production NODE_ENV and/or APP_ENV
 
+Type: [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+
 # test
 
-[src/constants.js:13-13](https://github.com/wework/env-universal/blob/f7eb9a58be7ed6db2083072f3e0c31318b25a93c/src/constants.js#L13-L13 "Source code on GitHub")
+[src/constants.js:13-13](https://github.com/wework/env-universal/blob/0a2b54793223f90818185b82f9e570c96f1876af/src/constants.js#L13-L13 "Source code on GitHub")
 
 Test NODE_ENV
 
+Type: [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+
 # ci
 
-[src/constants.js:19-19](https://github.com/wework/env-universal/blob/f7eb9a58be7ed6db2083072f3e0c31318b25a93c/src/constants.js#L19-L19 "Source code on GitHub")
+[src/constants.js:19-19](https://github.com/wework/env-universal/blob/0a2b54793223f90818185b82f9e570c96f1876af/src/constants.js#L19-L19 "Source code on GitHub")
 
 CI NODE_ENV
 
+Type: [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+
 # development
 
-[src/constants.js:25-25](https://github.com/wework/env-universal/blob/f7eb9a58be7ed6db2083072f3e0c31318b25a93c/src/constants.js#L25-L25 "Source code on GitHub")
+[src/constants.js:25-25](https://github.com/wework/env-universal/blob/0a2b54793223f90818185b82f9e570c96f1876af/src/constants.js#L25-L25 "Source code on GitHub")
 
 Development NODE_ENV
 
+Type: [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+
 # staging
 
-[src/constants.js:31-31](https://github.com/wework/env-universal/blob/f7eb9a58be7ed6db2083072f3e0c31318b25a93c/src/constants.js#L31-L31 "Source code on GitHub")
+[src/constants.js:31-31](https://github.com/wework/env-universal/blob/0a2b54793223f90818185b82f9e570c96f1876af/src/constants.js#L31-L31 "Source code on GitHub")
 
 Staging APP_ENV
 
+Type: [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+
 # preprod
 
-[src/constants.js:37-37](https://github.com/wework/env-universal/blob/f7eb9a58be7ed6db2083072f3e0c31318b25a93c/src/constants.js#L37-L37 "Source code on GitHub")
+[src/constants.js:37-37](https://github.com/wework/env-universal/blob/0a2b54793223f90818185b82f9e570c96f1876af/src/constants.js#L37-L37 "Source code on GitHub")
 
 Preprod APP_ENV
 
+Type: [string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+
 # env-universal/utils
 
-[src/utils.js:3-3](https://github.com/wework/env-universal/blob/f7eb9a58be7ed6db2083072f3e0c31318b25a93c/src/utils.js#L3-L3 "Source code on GitHub")
+[src/utils.js:3-3](https://github.com/wework/env-universal/blob/0a2b54793223f90818185b82f9e570c96f1876af/src/utils.js#L3-L3 "Source code on GitHub")
 
 # getAppVersion
 
-[src/utils.js:21-21](https://github.com/wework/env-universal/blob/f7eb9a58be7ed6db2083072f3e0c31318b25a93c/src/utils.js#L21-L21 "Source code on GitHub")
+[src/utils.js:21-21](https://github.com/wework/env-universal/blob/0a2b54793223f90818185b82f9e570c96f1876af/src/utils.js#L21-L21 "Source code on GitHub")
 
 Get the app version from package.json
 
 **Parameters**
 
--   `config` **\[[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)](default {})** 
+-   `config` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)?= {}** 
     -   `config.npm_package_version` **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** 
 
 Returns **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** 
 
 # getEnv
 
-[src/utils.js:29-29](https://github.com/wework/env-universal/blob/f7eb9a58be7ed6db2083072f3e0c31318b25a93c/src/utils.js#L29-L29 "Source code on GitHub")
+[src/utils.js:29-29](https://github.com/wework/env-universal/blob/0a2b54793223f90818185b82f9e570c96f1876af/src/utils.js#L29-L29 "Source code on GitHub")
 
 Get the application environment, defaults to development
 
 **Parameters**
 
--   `config` **\[[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)](default {})** 
+-   `config` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)?= {}** 
     -   `config.NODE_ENV` **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** 
 
 Returns **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** 
 
 # getStage
 
-[src/utils.js:37-37](https://github.com/wework/env-universal/blob/f7eb9a58be7ed6db2083072f3e0c31318b25a93c/src/utils.js#L37-L37 "Source code on GitHub")
+[src/utils.js:37-37](https://github.com/wework/env-universal/blob/0a2b54793223f90818185b82f9e570c96f1876af/src/utils.js#L37-L37 "Source code on GitHub")
 
 Get the application deployment stage
 
 **Parameters**
 
--   `config` **\[[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)](default {})** 
+-   `config` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)?= {}** 
     -   `config.APP_ENV` **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** 
 
 Returns **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)?** 
 
 # isDev
 
-[src/utils.js:45-45](https://github.com/wework/env-universal/blob/f7eb9a58be7ed6db2083072f3e0c31318b25a93c/src/utils.js#L45-L45 "Source code on GitHub")
+[src/utils.js:45-45](https://github.com/wework/env-universal/blob/0a2b54793223f90818185b82f9e570c96f1876af/src/utils.js#L45-L45 "Source code on GitHub")
 
 Is the application in development mode?
 
 **Parameters**
 
--   `config` **\[[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)](default {})** 
+-   `config` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)?= {}** 
     -   `config.NODE_ENV` **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** 
 
 Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 # isDeployed
 
-[src/utils.js:53-53](https://github.com/wework/env-universal/blob/f7eb9a58be7ed6db2083072f3e0c31318b25a93c/src/utils.js#L53-L53 "Source code on GitHub")
+[src/utils.js:53-53](https://github.com/wework/env-universal/blob/0a2b54793223f90818185b82f9e570c96f1876af/src/utils.js#L53-L53 "Source code on GitHub")
 
 Is the application deployed (NODE_ENV=production)
 
 **Parameters**
 
--   `config` **\[[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)](default {})** 
+-   `config` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)?= {}** 
     -   `config.NODE_ENV` **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** 
 
 Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 # isCI
 
-[src/utils.js:61-61](https://github.com/wework/env-universal/blob/f7eb9a58be7ed6db2083072f3e0c31318b25a93c/src/utils.js#L61-L61 "Source code on GitHub")
+[src/utils.js:61-61](https://github.com/wework/env-universal/blob/0a2b54793223f90818185b82f9e570c96f1876af/src/utils.js#L61-L61 "Source code on GitHub")
 
 Is the application in CI mode?
 
 **Parameters**
 
--   `config` **\[[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)](default {})** 
+-   `config` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)?= {}** 
     -   `config.NODE_ENV` **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** 
 
 Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 # isTest
 
-[src/utils.js:69-69](https://github.com/wework/env-universal/blob/f7eb9a58be7ed6db2083072f3e0c31318b25a93c/src/utils.js#L69-L69 "Source code on GitHub")
+[src/utils.js:69-69](https://github.com/wework/env-universal/blob/0a2b54793223f90818185b82f9e570c96f1876af/src/utils.js#L69-L69 "Source code on GitHub")
 
 Is the application in test mode?
 
 **Parameters**
 
--   `config` **\[[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)](default {})** 
+-   `config` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)?= {}** 
     -   `config.NODE_ENV` **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** 
 
 Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 # isStaging
 
-[src/utils.js:77-77](https://github.com/wework/env-universal/blob/f7eb9a58be7ed6db2083072f3e0c31318b25a93c/src/utils.js#L77-L77 "Source code on GitHub")
+[src/utils.js:77-77](https://github.com/wework/env-universal/blob/0a2b54793223f90818185b82f9e570c96f1876af/src/utils.js#L77-L77 "Source code on GitHub")
 
 Is the application a staging deployment?
 
 **Parameters**
 
--   `config` **\[[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)](default {})** 
+-   `config` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)?= {}** 
     -   `config.APP_ENV` **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** 
 
 Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 # isPreProd
 
-[src/utils.js:85-85](https://github.com/wework/env-universal/blob/f7eb9a58be7ed6db2083072f3e0c31318b25a93c/src/utils.js#L85-L85 "Source code on GitHub")
+[src/utils.js:85-85](https://github.com/wework/env-universal/blob/0a2b54793223f90818185b82f9e570c96f1876af/src/utils.js#L85-L85 "Source code on GitHub")
 
 Is the application a preprod deployment?
 
 **Parameters**
 
--   `config` **\[[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)](default {})** 
+-   `config` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)?= {}** 
     -   `config.APP_ENV` **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** 
 
 Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 # isProduction
 
-[src/utils.js:93-93](https://github.com/wework/env-universal/blob/f7eb9a58be7ed6db2083072f3e0c31318b25a93c/src/utils.js#L93-L93 "Source code on GitHub")
+[src/utils.js:93-93](https://github.com/wework/env-universal/blob/0a2b54793223f90818185b82f9e570c96f1876af/src/utils.js#L93-L93 "Source code on GitHub")
 
 Is the application a production deployment?
 
 **Parameters**
 
--   `config` **\[[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)](default {})** 
+-   `config` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)?= {}** 
     -   `config.APP_ENV` **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** 
 
 Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 # isHerokuReviewApp
 
-[src/utils.js:101-101](https://github.com/wework/env-universal/blob/f7eb9a58be7ed6db2083072f3e0c31318b25a93c/src/utils.js#L101-L101 "Source code on GitHub")
+[src/utils.js:101-101](https://github.com/wework/env-universal/blob/0a2b54793223f90818185b82f9e570c96f1876af/src/utils.js#L101-L101 "Source code on GitHub")
 
 Is the application a heroku review app deployment?
 
 **Parameters**
 
--   `config` **\[[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)](default {})** 
+-   `config` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)?= {}** 
     -   `config.IS_REVIEW_APP` **any** 
 
 Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 # isServer
 
-[src/utils.js:109-109](https://github.com/wework/env-universal/blob/f7eb9a58be7ed6db2083072f3e0c31318b25a93c/src/utils.js#L109-L109 "Source code on GitHub")
+[src/utils.js:109-109](https://github.com/wework/env-universal/blob/0a2b54793223f90818185b82f9e570c96f1876af/src/utils.js#L109-L109 "Source code on GitHub")
 
 Is the application running in a server runtime?
 
 **Parameters**
 
--   `config` **\[[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)](default {})** 
+-   `config` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)?= {}** 
     -   `config.SERVER` **any** 
 
 Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 # isClient
 
-[src/utils.js:117-117](https://github.com/wework/env-universal/blob/f7eb9a58be7ed6db2083072f3e0c31318b25a93c/src/utils.js#L117-L117 "Source code on GitHub")
+[src/utils.js:117-117](https://github.com/wework/env-universal/blob/0a2b54793223f90818185b82f9e570c96f1876af/src/utils.js#L117-L117 "Source code on GitHub")
 
 Is the application running in a client runtime?
 
 **Parameters**
 
--   `config` **\[[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)](default {})** 
+-   `config` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)?= {}** 
     -   `config.CLIENT` **any** 
 
 Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
 # getPublicEnv
 
-[src/utils.js:137-140](https://github.com/wework/env-universal/blob/f7eb9a58be7ed6db2083072f3e0c31318b25a93c/src/utils.js#L137-L140 "Source code on GitHub")
+[src/utils.js:137-140](https://github.com/wework/env-universal/blob/0a2b54793223f90818185b82f9e570c96f1876af/src/utils.js#L137-L140 "Source code on GitHub")
 
 When building universal apps, it is common for a Node
 process to have sensitive information stored as
@@ -291,7 +303,7 @@ something like `webpack.DefinePlugin`
 
 -   `publicKeys` **[Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)&lt;[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>** keys from Node `process.env`
                                     to inject into a client bundle
--   `config` **\[[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)](default process.env)** 
+-   `config` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)?= process.env** 
 
 **Examples**
 
@@ -303,7 +315,7 @@ Returns **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refer
 
 # getHerokuMetadata
 
-[src/utils.js:157-162](https://github.com/wework/env-universal/blob/f7eb9a58be7ed6db2083072f3e0c31318b25a93c/src/utils.js#L157-L162 "Source code on GitHub")
+[src/utils.js:157-162](https://github.com/wework/env-universal/blob/0a2b54793223f90818185b82f9e570c96f1876af/src/utils.js#L157-L162 "Source code on GitHub")
 
 This is only useful for applications running on heroku
 with the [`runtime-dyno-metadata` labs feature enabled](https://devcenter.heroku.com/articles/dyno-metadata) and
@@ -311,7 +323,7 @@ is not included in the default output of `env`
 
 **Parameters**
 
--   `config` **\[[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)](default {})** 
+-   `config` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)?= {}** 
     -   `config.HEROKU_APP_NAME` **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** The application name. "example-app"
     -   `config.HEROKU_RELEASE_CREATED_AT` **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** The time and date the release was created.
                                                             "2015-04-02T18:00:42Z"
@@ -323,30 +335,30 @@ Returns **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refer
 
 # env-universal/serverUtils
 
-[src/serverUtils.js:3-3](https://github.com/wework/env-universal/blob/f7eb9a58be7ed6db2083072f3e0c31318b25a93c/src/serverUtils.js#L3-L3 "Source code on GitHub")
+[src/serverUtils.js:3-3](https://github.com/wework/env-universal/blob/0a2b54793223f90818185b82f9e570c96f1876af/src/serverUtils.js#L3-L3 "Source code on GitHub")
 
 # serverHost
 
-[src/serverUtils.js:14-14](https://github.com/wework/env-universal/blob/f7eb9a58be7ed6db2083072f3e0c31318b25a93c/src/serverUtils.js#L14-L14 "Source code on GitHub")
+[src/serverUtils.js:14-14](https://github.com/wework/env-universal/blob/0a2b54793223f90818185b82f9e570c96f1876af/src/serverUtils.js#L14-L14 "Source code on GitHub")
 
 Get the server host. Defaults to '0.0.0.0'
 
 **Parameters**
 
--   `config` **\[[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)](default {})** 
+-   `config` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)?= {}** 
     -   `config.HOST` **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** 
 
 Returns **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** 
 
 # serverPort
 
-[src/serverUtils.js:23-23](https://github.com/wework/env-universal/blob/f7eb9a58be7ed6db2083072f3e0c31318b25a93c/src/serverUtils.js#L23-L23 "Source code on GitHub")
+[src/serverUtils.js:23-23](https://github.com/wework/env-universal/blob/0a2b54793223f90818185b82f9e570c96f1876af/src/serverUtils.js#L23-L23 "Source code on GitHub")
 
 Get the server port. Defaults to '8080'
 
 **Parameters**
 
--   `config` **\[[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)](default {})** 
+-   `config` **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)?= {}** 
     -   `config.PORT` **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** 
 
 Returns **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** 
