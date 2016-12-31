@@ -51,7 +51,7 @@
   },
   "homepage": "https://github.com/wework/env-universal#readme",
   "peerDependencies": {
-    "lodash": "4.x"
+    "lodash": "^4.17.4"
   },
   "devDependencies": {
     "auto-changelog": "0.3.1",
