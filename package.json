@@ -63,7 +63,7 @@
     "babel-preset-stage-0": "6.16.0",
     "chai": "3.5.0",
     "coveralls": "2.11.15",
-    "documentation": "4.0.0-beta16",
+    "documentation": "4.0.0-rc.0",
     "eslint": "3.12.2",
     "eslint-friendly-formatter": "2.0.6",
     "eslint-import-resolver-node": "0.3.0",
