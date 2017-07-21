@@ -64,7 +64,7 @@
     "chai": "3.5.0",
     "coveralls": "2.11.15",
     "documentation": "4.0.0-beta16",
-    "eslint": "3.12.2",
+    "eslint": "4.3.0",
     "eslint-friendly-formatter": "2.0.6",
     "eslint-import-resolver-node": "0.3.0",
     "eslint-plugin-import": "2.2.0",
