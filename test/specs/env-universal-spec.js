@@ -93,6 +93,14 @@ describe('dist/env-universal', () => {
       expect(readEnv({ NODE_ENV: 'testCI' }).is.ci).to.eql(true);
     });
 
+    it('is.qa=false when APP_ENV!=qa', () => {
+      expect(readEnv({ APP_ENV: 'foo' }).is.qa).to.eql(false);
+    });
+
+    it('is.qa=true when APP_ENV=qa', () => {
+      expect(readEnv({ APP_ENV: 'qa' }).is.qa).to.eql(true);
+    });
+
     it('is.staging=false when APP_ENV!=staging', () => {
       expect(readEnv({ APP_ENV: 'foo' }).is.staging).to.eql(false);
     });

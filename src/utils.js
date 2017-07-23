@@ -8,6 +8,7 @@ import {
   production,
   ci,
   test,
+  qa,
   staging,
   preprod
 } from './constants';
@@ -67,6 +68,14 @@ export const isCI = (config = {}) => getEnv(config) === ci;
  * @return {Boolean}
  */
 export const isTest = (config = {}) => getEnv(config) === test || isCI(config);
+
+/**
+ * Is the application a qa deployment?
+ * @param  {Object} config
+ * @param  {String} config.APP_ENV
+ * @return {Boolean}
+ */
+export const isQa = (config = {}) => getStage(config) === qa;
 
 /**
  * Is the application a staging deployment?
