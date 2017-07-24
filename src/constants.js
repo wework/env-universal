@@ -25,6 +25,12 @@ export const ci = 'testCI';
 export const development = 'development';
 
 /**
+ * QA APP_ENV
+ * @type {String}
+ */
+export const qa = 'qa';
+
+/**
  * Staging APP_ENV
  * @type {String}
  */

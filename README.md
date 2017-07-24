@@ -29,6 +29,7 @@ Env          | Condition  |   Notes  |
 `production` | `APP_ENV` is 'production' | `NODE_ENV` should be 'production' for deployments |
 `staging`    | `APP_ENV` is 'staging' | `NODE_ENV` should be 'production' for deployments |
 `preprod`    | `APP_ENV` is 'preprod' | `NODE_ENV` should be 'production' for deployments |
+`qa`    | `APP_ENV` is 'qa' | `NODE_ENV` should be 'production' for deployments |
 `test`       | `NODE_ENV` is 'test' or 'testCI' | |
 
 *Note that `NODE_ENV=production` only indicates that the app is deployed (vs running locally in development) and that `APP_ENV` specifies the environment.*

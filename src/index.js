@@ -42,6 +42,7 @@ export default function readEnv(config = process.env) {
    * @property {Boolean} is.client
    * @property {Boolean} is.server
    * @property {Boolean} is.dev
+   * @property {Boolean} is.qa
    * @property {Boolean} is.staging
    * @property {Boolean} is.preprod
    * @property {Boolean} is.production
@@ -64,6 +65,7 @@ export default function readEnv(config = process.env) {
       client: utils.isClient(config),
       server: utils.isServer(config),
       dev: utils.isDev(config),
+      qa: utils.isQA(config),
       staging: utils.isStaging(config),
       preprod: utils.isPreProd(config),
       production: utils.isProduction(config),
