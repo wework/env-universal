@@ -75,7 +75,7 @@ export const isTest = (config = {}) => getEnv(config) === test || isCI(config);
  * @param  {String} config.APP_ENV
  * @return {Boolean}
  */
-export const isQa = (config = {}) => getStage(config) === qa;
+export const isQA = (config = {}) => getStage(config) === qa;
 
 /**
  * Is the application a staging deployment?

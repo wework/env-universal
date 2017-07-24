@@ -25,7 +25,7 @@ export const ci = 'testCI';
 export const development = 'development';
 
 /**
- * Qa NODE_ENV
+ * QA APP_ENV
  * @type {String}
  */
 export const qa = 'qa';

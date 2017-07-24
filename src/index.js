@@ -65,7 +65,7 @@ export default function readEnv(config = process.env) {
       client: utils.isClient(config),
       server: utils.isServer(config),
       dev: utils.isDev(config),
-      qa: utils.isQa(config),
+      qa: utils.isQA(config),
       staging: utils.isStaging(config),
       preprod: utils.isPreProd(config),
       production: utils.isProduction(config),
