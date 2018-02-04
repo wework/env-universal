@@ -80,7 +80,7 @@
     "karma-sourcemap-loader": "0.3.7",
     "karma-webpack": "1.8.0",
     "mocha": "3.4.2",
-    "np": "2.16.0",
+    "np": "2.19.0",
     "nsp": "2.6.3",
     "nyc": "11.0.3",
     "phantomjs-prebuilt": "2.1.14",
