@@ -89,7 +89,7 @@
     "rollup-plugin-filesize": "1.0.1",
     "rollup-watch": "2.5.0",
     "semver": "5.4.0",
-    "sinon": "1.17.7",
+    "sinon": "5.0.3",
     "sinon-chai": "2.8.0",
     "webpack": "1.14.0",
     "yarn-run-all": "3.1.1"
