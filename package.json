@@ -82,7 +82,7 @@
     "mocha": "3.4.2",
     "np": "2.16.0",
     "nsp": "2.6.3",
-    "nyc": "11.0.3",
+    "nyc": "11.7.3",
     "phantomjs-prebuilt": "2.1.14",
     "rollup": "0.38.2",
     "rollup-plugin-babel": "2.7.1",
