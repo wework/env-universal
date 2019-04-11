@@ -54,7 +54,7 @@
     "lodash": "4.x"
   },
   "devDependencies": {
-    "auto-changelog": "0.3.1",
+    "auto-changelog": "1.12.1",
     "babel-core": "6.25.0",
     "babel-loader": "7.1.1",
     "babel-plugin-external-helpers": "6.22.0",
