@@ -79,7 +79,7 @@
     "karma-sauce-launcher": "1.1.0",
     "karma-sourcemap-loader": "0.3.7",
     "karma-webpack": "1.8.0",
-    "mocha": "3.4.2",
+    "mocha": "6.1.4",
     "np": "2.16.0",
     "nsp": "2.6.3",
     "nyc": "11.0.3",
